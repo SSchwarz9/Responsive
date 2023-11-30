@@ -1,0 +1,94 @@
+/*marge 0 universal per la fàcil modificació més endevant*/
+*{
+    margin: 0px;
+}
+
+/*Tamany i font per a la resta de la web que no estigue especificat*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: lightgray;
+}
+
+#container{
+    width: 100%;
+    margin: 0px auto;
+}
+
+/*Capçalera*/
+header{
+    text-align: center;
+    background: lightblue;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    font-size: larger;
+    color: red;
+}
+
+/*Llistat que on llevam l'estil i els feim que s'ordeni horitzontalment*/
+nav ul li{
+    float: left;
+    line-height: 45px;
+    margin:10px;
+    list-style: none;
+}
+
+
+nav{
+    background-color: lightslategray;
+    height: 75px;
+}
+
+/*separació del diferents blocs semàntics per evitar la superposició*/
+.separación{
+    clear:both;
+}
+
+/*Contingut principal*/
+#content{
+    float: left;
+    width: 80%;
+    min-height: 600px;
+    background-color: rgb(44, 125, 37);
+    text-align: center;
+}
+
+
+.titulo h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.contenido p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/*Ajustament del aside amb "cal()" per a que no boti*/
+aside{
+    float: left;
+    width: calc(20%-20px);
+    background-image: url(fondo.jpg);
+    min-height: 600px;
+    padding: 10px;
+    text-align: center;
+}
+
+aside ul{
+    font-size: large;
+    margin: 20px;
+    list-style: none
+}
+
+/*Separació del llistat de la resta de pàgina webs*/
+.colorenlace{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+footer{
+    text-align: center;
+}
