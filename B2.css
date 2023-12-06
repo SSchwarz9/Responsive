@@ -1,45 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header{
-    margin-top: 0;
-    text-align: center;
+    padding: 10px 6px;
     font-family: monospace;
-    float: left;
-    
-
-}
-
-.nav1{
-    margin-top: 10px;
-    background-color: black;
-    float: left;
-
-
-}
-
-.nav2{
-    margin-top: 5px;
-    background-color: grey;
-    float: left;
-
-}
-
-#video_fondo {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
+    top: 0;
+    align-items: center;
+
+}
+
+.img-s{
+    width: 95px;
+    height: 70px;
+    flex-grow: 0;
+}
+
+nav ul li{
+    list-style: none;
+    display: flex;
+    float: left;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+
+nav a{
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+	-webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 1px 4px #23430C;
+    display: block;
+    padding: 1px 10px;
+    
+}
+
+.hover > li:hover{
+    background-color: rgb(75, 74, 74);
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative
     overflow: hidden;
-    }
-    #video_pattern {
-    background:#fff;
+}
+
+.video{
     position: fixed;
-    opacity: 0.8;
-    left: 0px;
-    top: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    }
+    object-fit: cover;
+    z-index: -1;
+}
+
+   
+main section {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    font-family: monospace;
+}
+
+.titulo{
+    padding-top: 15%;
+    color: black;
+    font-size: 75px;font-weight: 700;
+    color: white;  
+
+}
+
+.barcelona{
+    font-size: 75px;
+}
+
+.entradas{
+    text-decoration: none;
+    color:white;
+    color: gold;
+    background: rgb(2, 2, 87);
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+
+
+.barra{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.barra li:hover{
+	background-color: black;
+}
+
+.hover li:hover .barra{
+    display: block;
+}
+
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+    text-align: center;
+}
+/*.caja{
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    border: 8px solid red;
+    background: yellow;
+    text-align: center;
+    border-radius: 1;
+    align-content: center;
+
+}
+
