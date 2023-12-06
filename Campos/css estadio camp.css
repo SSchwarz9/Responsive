@@ -1,0 +1,55 @@
+*{
+    background: #122562;
+}
+header{
+    text-align: center;
+}
+h1{
+    color: #fdc52c;
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+#campo{
+    border: 3px solid black;
+    width: 99.7%; 
+    height: 600px;
+
+}
+.img-s{
+    width: 95px;
+    height: 70px;
+    float: left;
+    padding-top: none;
+}
+main{
+    float: left;
+    width: 80%; 
+    color: #d4aa36e2;
+    text-align: center;
+    padding-left: 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    font-size: 20px;
+}
+.clearfix{
+    clear: both;
+}
+aside{
+    float: right;
+    width: 15%;
+    text-align: center;
+    border: 2px solid black;
+    border-top: 3px;
+    padding-bottom: 2%;
+}
+#como{ 
+    color: #fdc52c;
+}
+#llegar:hover{
+    color: #d4aa36e2;
+}
+#foto{
+    padding-left: 10px;
+}
