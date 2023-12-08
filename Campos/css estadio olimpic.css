@@ -1,29 +1,29 @@
-*{
+*{ /* El fondo de la página web de color azul oscuro*/
     background: #122562;
 }
-header{
+header{ /* Todo lo que pertenezca al header, estará centrado */
     text-align: center;
 }
-h1{
+h1{ /* Todo lo que esté en el h1, tendrá la letra de color dorado y estará subrayado, estará posicionado de manera relativa y centrada, habrá una separación de 15 píxeles entre el h1 y la parte de arriba de la página web */
     color: #fdc52c;
     position: relative;
     text-align: center;
     padding-top: 15px;
     text-decoration: underline;
 }
-#campo{
+#campo{ /* La imagen tendrá un borde de color negro, sólido y de 3 píxeles, ocupará un 99,7% del ancho de la página web y medirá 600 píxeles de ancho */
     border: 3px solid black;
     width: 99.7%; 
     height: 600px;
 
 }
-.img-s{
+.img-s{ /* La imagen con el enlace tendrá un ancho de 95 píxeles y un largo de 70 píxeles y se encontrá en la parte izquierda*/
     width: 95px;
     height: 70px;
     float: left;
     padding-top: none;
 }
-main{
+main{ /* Se encontrará en la parte izquierda, ocupará un 80% del ancho de la página, habrá un espacio de una 3% entre la parte izquierda de la página y el contenido del main, su contenido estará de color dorado, su tipografía será "Cambria", estará justificado y medirá 20 píxeles*/
     float: left;
     width: 80%; 
     color: #d4aa36e2;
@@ -33,114 +33,72 @@ main{
     text-align: justify;
     font-size: 20px;
 }
-.clearfix{
+.clearfix{ /* Esto es para que el enlace no se ponga en la misma línea que el "p", sino debajo de este */
     clear: both;
 }
-aside{
+aside{ /* El aside estará en la parte derecha de la página, ocupará el 15% del ancho de esta, su contenido estrá centrado, tendra un borde negro, sólido y de 2 píxeles de tamaño, no tendrá borde superior y su borde inferior se alargará un 2%*/
     float: right;
     width: 15%;
     text-align: center;
     border: 2px solid black;
-    border-top: 3px;
+    border-top: 0px;
     padding-bottom: 2%;
 }
-#como{ 
+#como{  /* La letra de color dorado */
     color: #fdc52c;
 }
-#llegar:hover{
+#llegar:hover{ /* Cuando pases con la flechita del ratón por encima del enlance, este se pondrá de color dorado */
     color: #d4aa36e2;
 }
-.foto{
+.foto{ /* Los iconos tendrán una separación de 10 píxeles con el contenido y medirán 20 píxeles de ancho y de largo */
     padding-left: 10px;
+    width: 20px;
+    height: 20px;
 }
 
-@media (max-width:600px){
-    header{
-        text-align: center;
-    }
-    h1{
-        color: #fdc52c;
-        position: relative;
-        text-align: center;
-        padding-top: 15px;
-        text-decoration: underline;
-    }
-    #campo{
+@media (max-width:600px){ /* Todos los dispositivos que tengan un ancho menor a 600 píxeles tendrá como diferencia que:  */ 
+    #campo{ /* Ocupará el 90% del ancho de la página web y tendrá una longitud de 300 píxeles */
         width: 90%; 
         height: 300px;
-        border: 3px solid black;
-
     }
-    main{
-        float: left;
+    main{ /* Ocupará el 60% del ancho de la página web y el tamño de la letra será más pequeño  */
         width: 60%; 
-        color: #d4aa36e2;
-        text-align: center;
-        padding-left: 3%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: justify;
-        font-size: x-small;
+        font-size: small;
     }
-    aside{
-        float: right;
+    aside{ /* Ocupará el 35% del ancho de la página, la letra será más pequeña y no tendrá bordes */
         width: 35%;
-        text-align: center;
-        padding-bottom: 2%;
         font-size: small;
         border-top: 0px;
         border-bottom: 0px;
         border-left: 0px;
         border-right: 0px;
-        text-decoration: solid black;
     }
-    .foto{
+    .foto{ /* Los iconos medirán 15 píxeles de largo y ancho */
         width: 15px;
         height: 15px;
     }
 }
-@media (max-width:290px){
-    h1{
-        color: #fdc52c;
-        position: relative;
-        text-align: center;
-        padding-top: 15px;
-        text-decoration: underline;
+@media (max-width:290px){ /* Todos los dispositivos que tengan un ancho menor a 290 píxeles tendrá como diferencia que: */
+    h1{ /* La letra estrá aun más pequeña */
         font-size: smaller;
     }
-    #campo{
-        width: 90%; 
+    #campo{ /* Medirá 200 píxeles de largo */ 
         height: 200px;
-        border: 3px solid black;
     }
-    .img-s{
+    .img-s{ /* Medirá 32 píxeles de ancho y 27 píxeles de largo */
         width: 32px;
         height: 27px;
     }
-    .foto{
+    .foto{ /* Los iconos medirán 10 píxeles de largo y ancho */
         width: 10px;
         height: 10px;
     }
-    aside{
-        float: right;
-        width: 35%;
-        text-align: center;
-        padding-bottom: 2%;
+    aside{ /* La letra será aun más pequeña que antes*/
         font-size: x-small;
-        border-top: 0px;
-        border-bottom: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        text-decoration: solid black;
+
     }
-    main{
-        float: left;
-        width: 60%; 
-        color: #d4aa36e2;
-        text-align: center;
-        padding-left: 3%;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: justify;
-        font-size: xx-small;
+    main{ /* La letra será aun más pequeña que antes*/
+        font-size: x-small;
     }
 }
 

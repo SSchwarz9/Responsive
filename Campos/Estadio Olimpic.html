@@ -1,31 +1,23 @@
 <html>
 <head>
-     <!--<details class="cncer">
-            <summary>
-                Estadio con casi 100 años de historia
-            </summary>
-            background: #252850;
-            #202355;
-
-        </details>-->
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Estadio Olimpico Lluis Companys</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css estadio olimpic.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css estadio olimpic.css'> <!-- Aqui está el enlace al css de este html -->
     <script src='main.js'></script>
 </head>
 <body>
-    <header> 
-        <h1>
+    <header> <!--Dentro del header estará el título, una imagen que será un enlace hacia la página principal y una foto del estadio en cuestión -->
+        <h1> <!-- Tanto la imagen con el enlace, como el título, pertenencen al "h1", ya que así ambos se encuentran en la misma línea  -->
             <div>
-            <a href="index.html"><img class="img-s" src="escudo barcelona.png" alt="escudo del Barcelona"></a>
+            <a href="index.html"><img class="img-s" src="escudo barcelona.png" alt="escudo del Barcelona"></a> <!-- Creamos una clase para poder editar la foto posteriormente en el css -->
             </div> 
-            Olímpico Lluís Companys
+            Olímpico Lluís Companys <!-- Nombre del campo -->
         </h1>
-        <img id="campo" src="Estadio Lluis Companys.jpg">
+        <img id="campo" src="Estadio Lluis Companys.jpg"> <!-- Imagen del campo -->
     </header>
-    <main>
+    <main> <!-- Dentro del main irá el contenido principal, en este caso, una breve descripción del estadio, en cursiva  -->
        <i> <p> Diseñado por el arquitecto barcelonés Pere Domènech i Roura e inaugurado el 20 de mayo de 1929 por el rey Alfonso XIII. </p>
         <p> Entre el 1985 y el 1989 se produjo una reconstrución del estadio.
             El 8 de septiembre de ese mismo año, el rey Juan Carlos I lo inauguró. </p>
@@ -33,10 +25,11 @@
         <p> Actualmente, el FC Barcelona es el equipo local de este estadio, debido a la reconstrucción de su estadio, Spotify Camp Nou. </p>
         <p> Puede albergar hasta 60.000 personas. </p> </i>
     </main>
-    <aside> <section> 
-            <p id="como"> ¿Cómo llegar? <img class="foto" src="https://cdn-icons-png.flaticon.com/512/1001/1001022.png" width="20px" height="20px"></p>
-            <div class="clearfix"></div>
-            <a id="llegar" href="https://www.google.es/maps/place/Estadio+Ol%C3%ADmpico+de+Montjuic/@41.3647521,2.1530955,17z/data=!4m16!1m9!3m8!1s0x12a4a26de2468693:0x573e709baa49c20c!2sEstadio+Ol%C3%ADmpico+de+Montjuic!8m2!3d41.3647481!4d2.1556704!9m1!1b1!16zL20vMDY1M19y!3m5!1s0x12a4a26de2468693:0x573e709baa49c20c!8m2!3d41.3647481!4d2.1556704!16zL20vMDY1M19y?entry=ttu"> UBICACIÓN 
-            <img class="foto" src="https://cdn-icons-png.flaticon.com/128/53/53213.png" width="20px" height="20px"> </a>
+    <aside> <section> <!-- Aqui está la ubicación del campo, pero al estar dentro de un aside, esto se ve en la parte derecha de la página web -->
+            <p id="como"> <!-- Creamos un identificador para editar el texto en el css --> ¿Cómo llegar? <img class="foto" src="https://cdn-icons-png.flaticon.com/512/1001/1001022.png"></p> <!-- Creamos una clase para poder editar estos dos iconos en el css -->
+            <div class="clearfix"></div> <!--Esto es para que el enlace no se ponga en la misma línea que el "p", sino debajo de este -->
+            <a id="llegar" href="https://www.google.es/maps/place/Estadio+Ol%C3%ADmpico+de+Montjuic/@41.3647521,2.1530955,17z/data=!4m16!1m9!3m8!1s0x12a4a26de2468693:0x573e709baa49c20c!2sEstadio+Ol%C3%ADmpico+de+Montjuic!8m2!3d41.3647481!4d2.1556704!9m1!1b1!16zL20vMDY1M19y!3m5!1s0x12a4a26de2468693:0x573e709baa49c20c!8m2!3d41.3647481!4d2.1556704!16zL20vMDY1M19y?entry=ttu"> UBICACIÓN <!-- Creamos un identificador para poder editar el enlace en el css -->
+            <img class="foto" src="https://cdn-icons-png.flaticon.com/128/53/53213.png"> </a> <!-- Creamos una clase para poder editar estos dos iconos en el css -->
     </aside> </section>
 </body>
+</html>
