@@ -1,3 +1,5 @@
+/*Reseteo del margin y padding para mayor facilidad
+en la edición*/
 *{
     margin: 0;
     padding: 0;
@@ -14,13 +16,14 @@ header{
     align-items: center;
 
 }
-
+/*tamñano icono del barcelona*/
 .img-s{
     width: 95px;
     height: 70px;
     flex-grow: 0;
 }
 
+/*ubicación y disposición del navbar*/
 nav ul li{
     list-style: none;
     display: flex;
@@ -31,7 +34,7 @@ nav ul li{
     
 }
 
-
+/*estilización del contenido del navbar*/
 nav a{
     text-decoration: none;
     font-weight: 700;
@@ -43,18 +46,33 @@ nav a{
     
 }
 
+
 .hover > li:hover{
     background-color: rgb(75, 74, 74);
+}
+
+
+
+.redes > a:hover{
+    transform: scale(1.4);
+    transition: 0.2s;
+}
+
+.redes{
+    display: flex; 
+    padding: 10px; 
+    margin: 1%;
 }
 
 section{
     height: 100%;
     width: 100%;
     text-align: center;
-    position: relative
     overflow: hidden;
+    padding-bottom: 10px;
 }
 
+/*video de fondo*/
 .video{
     position: fixed;
     top: 0;
@@ -85,8 +103,9 @@ main section {
     font-size: 75px;
 }
 
+/*caja para la compra de entradas*/
 .entradas{
-    text-decoration: none;
+    text-decoration: none; /*reseteo de est. de link*/
     color:white;
     color: gold;
     background: rgb(2, 2, 87);
@@ -96,43 +115,69 @@ main section {
     
 }
 
+/*hover con una pequeña y una transición para evitar 
+que sea brusco*/
+.caja:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
+/*nav vertical de estadios*/
 .barra{
 	position: absolute;
 	display: none;
 	list-style: none;
 	width: 200px;
 	background-color: rgba(0, 0, 0, .5);
+    text-align: center;   
 }
+
+/*parche para intentar arreglar 
+la falta de alineamento en el primer estadio*/
+#campnou{
+    padding-left: 35px;
+}
+   
 
 .barra li:hover{
 	background-color: black;
 }
 
+/*bloquea el navegador vertical cuando
+pasamos el ratón sobre "estadios*/
 .hover li:hover .barra{
     display: block;
 }
 
-.menu-vertical li:hover{
-	background-color: black;
+
+/*wEB RESPONSIVE -> pequeños cambios a los
+tamaños de la letras e imagenes, además
+se modifica la distancia del contenido principal
+para que se mantega el orden*/
+@media (max-width:740px){
+    nav ul li {
+        padding: 3px;
+        font-size: 18px;
+ 
+    }
+
+.redes a > img{
+    height: 20px;
+    width: 20px;
 }
 
-.menu-vertical li a{
-	display: block;
-	color: white;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
-    text-align: center;
+.redes a{
+    padding-left: 1px;
 }
-/*.caja{
-    width: 160px;
-    height: 80px;
-    padding: 20px;
-    border: 8px solid red;
-    background: yellow;
-    text-align: center;
-    border-radius: 1;
-    align-content: center;
+
+.titulo{
+    padding-top: 45%;
+    font-size: 55px;
 
 }
 
+.barcelona{
+    font-size: 55px;
+}
+
+}
