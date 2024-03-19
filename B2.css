@@ -1,0 +1,303 @@
+/*Reseteo del margin y padding para mayor facilidad
+en la edición*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0.600rem 0.300rem; /* 10px 6px */
+    max-width: 100%;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    align-items: center;
+    background-color: black;
+}
+
+.img-s {
+    width: 5.93rem; /* 95px */
+    height: 4.37rem; /* 70px */
+    flex-grow: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 0.625rem; /* 10px */
+    font-size: 1.5rem; /* 24px */
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700px;
+    color: white;
+    -webkit-text-stroke: 0.0625rem #F8F8F8; /* 1px */
+    text-shadow: 0px 0.0625rem 0.25rem #23430C; /* 0px 1px 4px */
+    display: block;
+    padding: 0.0625rem 0.625rem; /* 1px 10px */
+}
+
+.nav-s{
+    padding-right: 8%;
+}
+
+.hover > li:hover {
+    background-color: rgb(75, 74, 74);
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.625rem; /* 10px */
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+main section {
+    text-decoration: none;
+    font-weight: 700px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative; /* Establece el posicionamiento relativo */
+    top: -2rem; /* Ajusta la posición vertical hacia arriba */
+}
+
+.titulo {
+    padding-top: 9.37rem; /* 15% */
+    color: white;
+    font-size: 4.68rem; /* 75px */
+    font-weight: 70px;
+}
+
+.barcelona {
+    font-size: 4.68rem; /* 75px */
+}
+
+.entradas {
+    text-decoration: none;
+    color: white;
+    color: gold;
+    background: rgb(2, 2, 87);
+    font-size: 1.25rem; /* 20px */
+    padding: 0.5rem; /* 8px */
+    border-radius: 0.625rem; /* 10px */
+    position: relative; /* Establece el posicionamiento relativo */
+    top: -8rem; /* Ajusta la posición vertical hacia arriba */
+}
+
+.caja:hover {
+    color: #000080;
+}
+
+.barra {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 12.5rem; /* 200px */
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#campnou {
+    padding-left: 2.1875rem; /* 35px */
+}
+
+.barra li:hover {
+    background-color: black;
+}
+
+.hover li:hover .barra {
+    display: block;
+}
+
+.copy{
+    margin-left: 65%;
+}
+
+footer > a:hover {
+    transform: scale(1.4);
+    transition: 0.2s;
+}
+
+.redes {
+    position: absolute;
+    left: 5%; /* Ajusta la posición izquierda */
+    bottom: 5%; /* Ajusta la posición abajo */
+    margin: 1%;
+    z-index: 1; /* Asegura que los iconos estén detrás del banner de cookies */
+}
+
+footer {
+    background-color: #0e1c47ec;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 5%;
+    /* Usa flexbox para alinear verticalmente el contenido del footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+@media (max-width: 46.25rem) { /* 740px */
+    nav ul li {
+        padding: 0.1875rem; /* 3px */
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .redes a > img {
+        height: 1.25rem; /* 20px */
+        width: 1.25rem; /* 20px */
+    }
+
+    .redes a {
+        padding-left: 0.0625rem; /* 1px */
+    }
+
+    .titulo {
+        padding-top: 28.125%; /* 45% */
+        font-size: 3.4375rem; /* 55px */
+    }
+
+    .barcelona {
+        font-size: 3.4375rem; /* 55px */
+    }
+}
+
+/* CSS EN RELACIÓN A JS */
+
+#cookie-banner {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 0.625rem; /* Equivalente a 10px */
+    text-align: center;
+    z-index: 2; /* Asegura que el banner de cookies esté por encima de los iconos */
+}
+
+#boton_a {
+    background-color: #2fc834;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem; /* Equivalente a 10px 20px */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem; /* Equivalente a 16px */
+    margin: 0.25rem 0.125rem; /* Equivalente a 4px 2px */
+    cursor: pointer;
+    border-radius: 0.25rem; /* Equivalente a 4px */
+}
+
+#boton_r {
+    background-color: #ee2213;   
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem; /* Equivalente a 10px 20px */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem; /* Equivalente a 16px */
+    margin: 0.25rem 0.125rem; /* Equivalente a 4px 2px */
+    cursor: pointer;
+    border-radius: 0.25rem; /* Equivalente a 4px */
+}
+
+/* BOTÓN INICIAR SESIÓN Y REGISTRARSE */  
+button {
+    padding: 10px 20px; /* Ajusta el relleno (padding) según sea necesario */
+    font-size: 16px; /* Tamaño de fuente */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*Tipografía*/
+    background-color: transparent; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+    margin: 0 -5px; /* Establece un margen negativo */
+}
+
+.button-container {
+    display: flex;
+    padding-right: 2%;
+}
+
+.button-container button {
+    margin-right: -10px; /* Ajusta según sea necesario */
+}
+
+.button-container button:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último botón */
+}
+
+button:hover {
+    transition: 0.3s;
+    transform: scale(1.3);
+    color: purple;
+}
+
+/* TOGGLE SWITCH */
+ /* Estilos del interruptor */
+ .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .toggle-switch-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .toggle-switch-label {
+    display: block;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 34px;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  }
+
+  .toggle-switch-checkbox:checked + .toggle-switch-label {
+    background-color: gold; /* Color de fondo cuando el interruptor está activado */
+  }
+
+  .toggle-switch-label:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s; /* Transición suave para el movimiento del interruptor */
+  }
+
+  .toggle-switch-checkbox:checked + .toggle-switch-label:before {
+    transform: translateX(26px); /* Mover el interruptor a la posición de "encendido" */
+  }
