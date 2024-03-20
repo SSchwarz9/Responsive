@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="icon" type="image.png" href="media/escudo barcelona.png">
+    <link rel="stylesheet" href="CSS/formulario2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTRO DE USUARIO</h1> <!--Título del formulario-->
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required> <!--Aquí va el nombre-->
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required> <!--Aquí van los apellidos-->
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required> <!--Aquí va el correo electrónico-->
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required> <!--Aquí va la contraseña-->
+            <button type="submit">Registrarse</button> <!--Botón para enviar el formulario-->
+        </form>
+        <div class="opciones"> <!-- Tambíen tienes la opción de entrar como invitado y no tener que rellenar el formulario o de ir al formulario de inicio de sesion-->
+            <a href="index.html">Entrar como invitado</a>
+            <a href="formulario1.html">Iniciar sesión</a>
+        </div>
+    </div>
+<script>
+const formulario = document.querySelector('form');
+const opciones = document.querySelector('.opciones');
+
+//Esto permite coger la información del formulario una vez se ha apretado el botón de iniciar sesión y antes de que esta se envíe, revisa si los datos son acordes a las validaciones
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const nombre = document.querySelector('#nombre').value;
+    const apellidos = document.querySelector('#apellidos').value;
+    const correo = document.querySelector('#correo').value;
+    const contrasena = document.querySelector('#contrasena').value;
+
+    // Validar nombre
+    const validNombre = /^[a-zA-Z\s]+$/; //Solo puede haber letras en mayúsuclas y minúsculas y espacios
+    if (!validNombre.test(nombre)) {
+        alert('El nombre solo puede contener letras'); // Si no cumple con la validación te salta esto
+            return;
+    }
+
+    // Validar apellidos
+    const validApellido = /^[a-zA-Z\s]+$/; //Solo puede haber letras en mayúsuclas y minúsculas y espacios
+    if (!validApellido.test(apellidos)) {
+        alert('Los apellidos solo pueden contener letras'); // Si no cumple con la validación te salta esto
+            return;
+    }
+
+    // Validar correo electrónico
+    const validCorreo = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$/; //Texto/Numeros/Caracteres + @Texto/Numeros + .Solo Texto y como míninmo dos letras
+    if (!validCorreo.test(correo)) {
+        alert('Correo electrónico no válido'); // Si no cumple con la validación te salta esto
+            return;
+    }
+
+    // Validar contraseña
+    const validContrasena = /^(?=.*[a-zA-Z])(?=.*\d).{8,}$/ // Mínimo 8 caracteres, donde debe haber como mínimo una letra y un número (sin necesidad de mayúsculas o caracteres especiales)
+    if (!validContrasena.test(contrasena)) {
+        alert('La contraseña debe tener al menos 8 caracteres, una letra minúscula y un número'); // Si no cumple con la validación te salta esto
+            return;
+    }
+        
+    // Redirigir a la página inicial si la validación es correcta
+    alert("Te has registrado correctamente. Redirigiendo a la pagina inicial...")
+        window.location.href = "index.html";
+});
+</script>   
+</body>
+</html>
